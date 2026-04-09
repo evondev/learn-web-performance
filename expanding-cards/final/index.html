@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expanding Cards</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel active">
+        <img
+          class="img_in_panel"
+          src="./images/hero.avif"
+          srcset="
+            ./images/hero.avif           1350w,
+            ./images/hero-970w-647w.avif  970w,
+            ./images/hero-256w-171w.avif  256w
+          "
+          sizes="(min-width: 500px) calc(64.28vw - 71px), calc(83.33vw - 50px)"
+          alt=""
+        />
+        <h3>Explore The World</h3>
+      </div>
+      <div
+        class="panel"
+        style="
+          background-image: url('./images/photo-1572276596237-5db2c3e16c5d.avif');
+        "
+      >
+        <h3>Wild Forest</h3>
+      </div>
+      <div
+        class="panel"
+        style="
+          background-image: url('./images/photo-1507525428034-b723cf961d3e.avif');
+        "
+      >
+        <h3>Sunny Beach</h3>
+      </div>
+      <div
+        class="panel"
+        style="
+          background-image: url('./images/photo-1551009175-8a68da93d5f9.avif');
+        "
+      >
+        <h3>City on Winter</h3>
+      </div>
+      <div
+        class="panel"
+        style="
+          background-image: url('./images/photo-1549880338-65ddcdfd017b.avif');
+        "
+      >
+        <h3>Mountains - Clouds</h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
