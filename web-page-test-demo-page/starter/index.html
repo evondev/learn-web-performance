@@ -103,7 +103,16 @@
         <h1>
           Pageload Delays Triple when Developers Forget to Check WebPageTest
         </h1>
-        <img src="./images/dog.webp" fetchpriority="high" />
+        <img
+          src="./images/dog.webp"
+          srcset="
+            ./images/dog.webp          2000w,
+            ./images/dog-1620-694.webp 1620w,
+            ./images/dog-1123-481.webp 1123w,
+            ./images/dog-649-278.webp   649w
+          "
+          sizes="(min-width: 960px) 58.48vw, 90vw"
+        />
         <p>
           Users are alarmed by increased webpage loading times, noting that
           helpful tools are "literally right here." <a href="#">Full Story</a>
@@ -128,7 +137,16 @@
           Users are alarmed by increased webpage loading times, noting that
           helpful tools are "literally right here." <a href="#">Full Story</a>
         </p>
-        <img src="./images/dog.webp?again" />
+        <img
+          src="./images/dog.webp?again"
+          srcset="
+            ./images/dog.webp          2000w,
+            ./images/dog-1620-694.webp 1620w,
+            ./images/dog-1123-481.webp 1123w,
+            ./images/dog-649-278.webp   649w
+          "
+          sizes="(min-width: 960px) 58.48vw, 90vw"
+        />
       </section>
       <section class="headlines-secondary">
         <article>
