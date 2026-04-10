@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>
@@ -59,6 +59,7 @@
         wptframe.style.width = "289px";
         wptframe.style.height = "102px";
         wptframe.loading = "lazy";
+        wptframe.title = "WebPageTest Performance AntiPattern Test Page";
         // Change the URL below to the one you want to load content from
         wptframe.src = "https://example.com ";
         document.querySelector("#wptsnippet").after(wptframe);
@@ -104,6 +105,7 @@
           Pageload Delays Triple when Developers Forget to Check WebPageTest
         </h1>
         <img
+          style="aspect-ratio: 2.33"
           src="./images/dog.webp"
           srcset="
             ./images/dog.webp          2000w,
@@ -113,6 +115,7 @@
           "
           sizes="(min-width: 960px) 58.48vw, 90vw"
           fetchpriority="high"
+          alt="dog"
         />
         <p>
           Users are alarmed by increased webpage loading times, noting that
@@ -122,11 +125,15 @@
       <section class="headlines-secondary">
         <article>
           <h2>JavaScript Frameworks Forecast Imminent First Input Delay</h2>
-          <img src="./images/delays.webp" alt="" />
+          <img src="./images/delays.webp" alt="delay" />
         </article>
         <article>
           <h2>Service Workers Respond as Requests Increasingly Mount</h2>
-          <img src="./images/serviceworkers.webp" importance="low" alt="" />
+          <img
+            src="./images/serviceworkers.webp"
+            importance="low"
+            alt="service workers"
+          />
         </article>
       </section>
     </main>
@@ -139,6 +146,7 @@
           helpful tools are "literally right here." <a href="#">Full Story</a>
         </p>
         <img
+          style="aspect-ratio: 2.33"
           src="./images/dog.webp?again"
           srcset="
             ./images/dog.webp          2000w,
@@ -147,19 +155,20 @@
             ./images/dog-649-278.webp   649w
           "
           sizes="(min-width: 960px) 58.48vw, 90vw"
+          alt="dog again"
         />
       </section>
       <section class="headlines-secondary">
         <article>
           <h2>Framework Developers Remind Users To Hydrate</h2>
-          <img src="./images/delays.webp?again" alt="" />
+          <img src="./images/delays.webp?again" alt="delay again" />
         </article>
         <article>
           <h2>Service Workers Handling Requests Beautifully</h2>
           <img
             src="./images/serviceworkers.webp?again"
             importance="low"
-            alt=""
+            alt="service workers again"
           />
         </article>
       </section>
@@ -183,11 +192,11 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      setTimeout(function () {
-        jQuery("#holder").html(
-          '<h3>We give up! Several stories will rotate in this carousel because we must include them all on the homepage. <a href="#">Full Story</a><h3> </p>',
-        );
-      }, 1000);
+      // setTimeout(function () {
+      //   jQuery("#holder").html(
+      //     '<h3>We give up! Several stories will rotate in this carousel because we must include them all on the homepage. <a href="#">Full Story</a><h3> </p>',
+      //   );
+      // }, 1000);
     </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"
