@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -25,7 +25,7 @@
       rel="stylesheet"
       href="https://code.jquery.com/ui/1.13.0-rc.3/themes/smoothness/jquery-ui.css"
     />
-    <link rel="preload" href="foo/bar/baz.css" as="style" />
+    <!-- <link rel="preload" href="foo/bar/baz.css" as="style" /> -->
     <link
       rel="apple-touch-icon"
       sizes="96x96"
@@ -78,7 +78,7 @@
                 month: "short",
                 day: "numeric",
               }) +
-              "</time></p>"
+              "</time></p>",
           );
         </script>
         <p class="logo">The Metric Times</p>
@@ -157,7 +157,7 @@
     <script>
       setTimeout(function () {
         jQuery("#holder").html(
-          '<h3>We give up! Several stories will rotate in this carousel because we must include them all on the homepage. <a href="#">Full Story</a><h3> </p>'
+          '<h3>We give up! Several stories will rotate in this carousel because we must include them all on the homepage. <a href="#">Full Story</a><h3> </p>',
         );
       }, 1000);
     </script>
@@ -169,8 +169,8 @@
         /*#__PURE__*/ React.createElement(
           "span",
           null,
-          "We Loaded ALL of React to Render This Heading!"
-        )
+          "We Loaded ALL of React to Render This Heading!",
+        ),
       );
     </script>
   </body>
